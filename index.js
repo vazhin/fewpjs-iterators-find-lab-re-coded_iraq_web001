@@ -5,5 +5,6 @@ function testFunc() {
 }
 
 let superbowlWin = (arrOfObjs) => {
-  arrOfObjs.filter(obj => obj.result === "W") === -1 ? 'undefined'
+  let result = arrOfObjs.filter(obj => obj.result === "W")
+  result === -1 ? 'undefined' : result.year
 }
